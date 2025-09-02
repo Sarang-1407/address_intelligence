@@ -1,0 +1,52 @@
+{
+  "lang":"en",
+  "name":"Lightsaber_Address_Intelligence",
+  "version":"2.0.0",
+  "spacy_version":">=3.8.7,<3.9.0",
+  "description":"Address NER model for Indian addresses",
+  "author":"Mehul Dhikonia",
+  "email":"mehul@bureau.id",
+  "url":"",
+  "license":"MIT",
+  "spacy_git_version":"4b65aa7",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null,
+    "mode":"default"
+  },
+  "labels":{
+    "entity_ruler":[
+      "area_name",
+      "area_pincode",
+      "city_name",
+      "state_name",
+      "street_name"
+    ],
+    "ner":[
+      "area_name",
+      "area_pincode",
+      "city_name",
+      "landmark",
+      "society_name",
+      "state_name",
+      "street_name",
+      "unassigned",
+      "unit"
+    ]
+  },
+  "pipeline":[
+    "entity_ruler",
+    "ner",
+    "expand_entities"
+  ],
+  "components":[
+    "entity_ruler",
+    "ner",
+    "expand_entities"
+  ],
+  "disabled":[
+
+  ]
+}
